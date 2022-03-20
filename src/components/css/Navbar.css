@@ -1,0 +1,17 @@
+.nav-bar-link-prop {
+  color: black;
+}
+nav-bar-link-prop.active {
+  color: red;
+}
+
+.nav-header-prop {
+  background-color: white;
+}
+.nav-header-top {
+  color: black;
+  background-color: white;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 59px;
+}

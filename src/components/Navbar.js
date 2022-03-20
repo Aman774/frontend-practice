@@ -1,8 +1,8 @@
 import React from "react";
 
-import "../css/bootstrap.min.css";
+// import "../css/bootstrap.min.css";
 // import "../vendors/themify-icon/themify-icons.css";
-// import "../vendors/font-awesome/css/all.csss";
+// import "../vendors/font-awesome/css/all.css";
 // import "../vendors/flaticon/flaticon.css";
 // import "../vendors/animation/animate.css";
 // import "../vendors/owl-carousel/assets/owl.carousel.min.css";
@@ -13,30 +13,65 @@ import "../css/bootstrap.min.css";
 // import "../vendors/scroll/jquery.mCustomScrollbar.min.css";
 
 // import "../css/style.css";
-import "../css/responsive.css";
+// import "../css/responsive.css";
+
+//js files import
+// import "../js/jquery-3.6.0.min.js";
+// import "../js/propper.js";
+// import "../js/bootstrap.min.js";
+// import "../vendors/wow/wow.min.js";
+// import "../vendors/sckroller/jquery.parallax-scroll.js";
+// import "../vendors/owl-carousel/owl.carousel.min.js";
+// import "../vendors/imagesloaded/imagesloaded.pkgd.min.js";
+// import "../vendors/isotope/isotope-min.js";
+// import "../vendors/magnify-pop/jquery.magnific-popup.min.js";
+// import "../vendors/scroll/jquery.mCustomScrollbar.concat.min.js";
+// import "../js/plugins.js";
+// import "../vendors/slick/slick.js";
+// import "../js/main.js";
+
+import "./css/Navbar.css";
 
 function Navbar(props) {
   return (
     <div>
       {" "}
-      <div class="body_wrapper">
-        <header class="header_area">
-          <nav class="navbar navbar-expand-lg menu_one menu_four">
-            <div class="container">
-              <a class="navbar-brand sticky_logo" href="#">
+      <div className="body_wrapper">
+        <header className="header_area nav-header-prop">
+          <div className="nav-header-top" align="right">
+            <div>
+              <p>Talk to an expert: +9188383883838 |</p>
+            </div>
+            <div>
+              <p>ContactUs |</p>
+            </div>
+            <div>
+              <p>Login/Signup |</p>
+            </div>
+            <div>
+              <p>English |</p>
+            </div>
+            <div>
+              <p>Region </p>
+            </div>
+          </div>
+
+          <nav className="navbar navbar-expand-lg menu_one menu_four">
+            <div className="container">
+              <a className="navbar-brand sticky_logo" href="#">
                 <img
-                  src="../img/logo2.png"
+                  src="../img/logo2x.png"
                   srcset="../img/logo2x-2.png 2x"
                   alt="logo"
                 />
                 <img
-                  src="../img/logo.png"
+                  src="../img/logo2x.png"
                   srcset="../img/logo2x.png 2x"
                   alt=""
                 />
               </a>
               <button
-                class="navbar-toggler collapsed"
+                className="navbar-toggler collapsed"
                 type="button"
                 data-toggle="collapse"
                 data-target="#navbarSupportedContent"
@@ -44,13 +79,13 @@ function Navbar(props) {
                 aria-expanded="false"
                 aria-label="Toggle navigation"
               >
-                <span class="menu_toggle">
-                  <span class="hamburger">
+                <span className="menu_toggle">
+                  <span className="hamburger">
                     <span></span>
                     <span></span>
                     <span></span>
                   </span>
-                  <span class="hamburger-cross">
+                  <span className="hamburger-cross">
                     <span></span>
                     <span></span>
                   </span>
@@ -58,339 +93,364 @@ function Navbar(props) {
               </button>
 
               <div
-                class="collapse navbar-collapse justify-content-between"
+                className="collapse navbar-collapse justify-content-between"
                 id="navbarSupportedContent"
               >
-                <ul class="navbar-nav menu w_menu ml-auto mr-auto">
-                  <li class="nav-item dropdown submenu mega_menu mega_menu_two">
+                <ul className="navbar-nav menu w_menu ml-auto mr-auto">
+                  <li className="nav-item dropdown submenu mega_menu mega_menu_two">
                     <a
-                      class="nav-link dropdown-toggle"
+                      className="nav-link dropdown-toggle "
                       href="#"
                       role="button"
                       data-toggle="dropdown"
                       aria-haspopup="true"
                       aria-expanded="false"
                     >
-                      Home
+                      <span className="nav-bar-link-prop">Product</span>
                     </a>
-                    <div class="mega_menu_inner">
-                      <ul class="dropdown-menu">
-                        <li class="nav-item">
-                          <ul class="dropdown-menu scroll">
-                            <li class="nav-item">
-                              <a href="home-chat.html" class="item">
-                                <span class="img">
-                                  <span class="rebon_tap">New</span>
+                    <div className="mega_menu_inner">
+                      <ul className="dropdown-menu">
+                        <li className="nav-item">
+                          <ul className="dropdown-menu scroll">
+                            <li className="nav-item">
+                              <a href="home-chat.html" className="item">
+                                <span className="img">
+                                  <span className="rebon_tap">New</span>
                                   <img
                                     src="../img/mega-menu-img/home-chat.jpg"
                                     alt="Prototyping Tool"
                                   />
                                 </span>
-                                <span class="text"> Home Chat </span>
+                                <span className="text"> Home Chat </span>
                               </a>
                             </li>
-                            <li class="nav-item">
-                              <a href="home-tracking.html" class="item">
-                                <span class="img">
-                                  <span class="rebon_tap">New</span>
+                            <li className="nav-item">
+                              <a href="home-tracking.html" className="item">
+                                <span className="img">
+                                  <span className="rebon_tap">New</span>
                                   <img
                                     src="../img/mega-menu-img/home-track.jpg"
                                     alt="Prototyping Tool"
                                   />
                                 </span>
-                                <span class="text"> Home Tracking </span>
+                                <span className="text"> Home Tracking </span>
                               </a>
                             </li>
-                            <li class="nav-item">
-                              <a href="home-event.html" class="item">
-                                <span class="img">
-                                  <span class="rebon_tap">New</span>
+                            <li className="nav-item">
+                              <a href="home-event.html" className="item">
+                                <span className="img">
+                                  <span className="rebon_tap">New</span>
                                   <img
                                     src="../img/mega-menu-img/home-event.jpg"
                                     alt="Prototyping Tool"
                                   />
                                 </span>
-                                <span class="text"> Home Event </span>
+                                <span className="text"> Home Event </span>
                               </a>
                             </li>
-                            <li class="nav-item">
-                              <a href="home-security.html" class="item">
-                                <span class="img">
-                                  <span class="rebon_tap">New</span>
+                            <li className="nav-item">
+                              <a href="home-security.html" className="item">
+                                <span className="img">
+                                  <span className="rebon_tap">New</span>
                                   <img
                                     src="../img/mega-menu-img/home-security.jpg"
                                     alt="Prototyping Tool"
                                   />
                                 </span>
-                                <span class="text"> Home Security </span>
+                                <span className="text"> Home Security </span>
                               </a>
                             </li>
-                            <li class="nav-item">
-                              <a href="home-split.html" class="item">
-                                <span class="img">
+                            <li className="nav-item">
+                              <a href="home-split.html" className="item">
+                                <span className="img">
                                   <img
                                     src="../img/mega-menu-img/home7.jpg"
                                     alt="Prototyping Tool"
                                   />
                                 </span>
-                                <span class="text"> Home Split </span>
+                                <span className="text"> Home Split </span>
                               </a>
                             </li>
-                            <li class="nav-item">
-                              <a href="home-support.html" class="item">
-                                <span class="img">
+                            <li className="nav-item">
+                              <a href="home-support.html" className="item">
+                                <span className="img">
                                   <img
                                     src="../img/mega-menu-img/support.jpg"
                                     alt="Prototyping Tool"
                                   />
                                 </span>
-                                <span class="text"> Support </span>
+                                <span className="text"> Support </span>
                               </a>
                             </li>
-                            <li class="nav-item">
-                              <a href="home-color.html" class="item">
-                                <span class="img">
+                            <li className="nav-item">
+                              <a href="home-color.html" className="item">
+                                <span className="img">
                                   <img
                                     src="../img/mega-menu-img/home-animation.jpg"
                                     alt="Prototyping Tool"
                                   />
                                 </span>
-                                <span class="text"> Scroll Animation </span>
+                                <span className="text"> Scroll Animation </span>
                               </a>
                             </li>
-                            <li class="nav-item">
-                              <a href="home-erp.html" class="item">
-                                <span class="img">
+                            <li className="nav-item">
+                              <a href="home-erp.html" className="item">
+                                <span className="img">
                                   <img
                                     src="../img/mega-menu-img/analytices.jpg"
                                     alt="Prototyping Tool"
                                   />
                                 </span>
-                                <span class="text"> Analytices </span>
+                                <span className="text"> Analytices </span>
                               </a>
                             </li>
-                            <li class="nav-item">
-                              <a href="home-hosting.html" class="item">
-                                <span class="img">
+                            <li className="nav-item">
+                              <a href="home-hosting.html" className="item">
+                                <span className="img">
                                   <img
                                     src="../img/mega-menu-img/hosting.jpg"
                                     alt="Prototyping Tool"
                                   />
                                 </span>
-                                <span class="text"> Hosting </span>
+                                <span className="text"> Hosting </span>
                               </a>
                             </li>
-                            <li class="nav-item">
-                              <a href="home-pos.html" class="item">
-                                <span class="img">
+                            <li className="nav-item">
+                              <a href="home-pos.html" className="item">
+                                <span className="img">
                                   <img
                                     src="../img/mega-menu-img/pos.jpg"
                                     alt="Prototyping Tool"
                                   />
                                 </span>
-                                <span class="text"> POS </span>
+                                <span className="text"> POS </span>
                               </a>
                             </li>
-                            <li class="nav-item">
-                              <a href="home-erp.html" class="item">
-                                <span class="img">
+                            <li className="nav-item">
+                              <a href="home-erp.html" className="item">
+                                <span className="img">
                                   <img
                                     src="../img/mega-menu-img/erp.jpg"
                                     alt="Prototyping Tool"
                                   />
                                 </span>
-                                <span class="text"> ERP </span>
+                                <span className="text"> ERP </span>
                               </a>
                             </li>
-                            <li class="nav-item">
-                              <a href="home-prototype-two.html" class="item">
-                                <span class="img">
+                            <li className="nav-item">
+                              <a
+                                href="home-prototype-two.html"
+                                className="item"
+                              >
+                                <span className="img">
                                   <img
                                     src="../img/mega-menu-img/Prototyping_Tool.jpg"
                                     alt="Prototyping Tool"
                                   />
                                 </span>
-                                <span class="text"> Prototyping Tool </span>
+                                <span className="text"> Prototyping Tool </span>
                               </a>
                             </li>
-                            <li class="nav-item">
+                            <li className="nav-item">
                               <a
                                 href="home-payment-processing.html"
-                                class="item"
+                                className="item"
                               >
-                                <span class="img">
+                                ``
+                                <span className="img">
                                   <img
                                     src="../img/mega-menu-img/home16.jpg"
                                     alt="home16"
                                   />
                                 </span>
-                                <span class="text"> Payment Processing </span>
+                                <span className="text">
+                                  {" "}
+                                  Payment Processing{" "}
+                                </span>
                               </a>
                             </li>
-                            <li class="nav-item">
-                              <a href="home-mail.html" class="item">
-                                <span class="img">
+                            <li className="nav-item">
+                              <a href="home-mail.html" className="item">
+                                <span className="img">
                                   <img
                                     src="../img/mega-menu-img/home9.jpg"
                                     alt="home9"
                                   />
                                 </span>
-                                <span class="text"> Email Client </span>
+                                <span className="text"> Email Client </span>
                               </a>
                             </li>
-                            <li class="nav-item">
-                              <a href="home-startup.html" class="item">
-                                <span class="img">
+                            <li className="nav-item">
+                              <a href="home-startup.html" className="item">
+                                <span className="img">
                                   <img
                                     src="../img/mega-menu-img/home15.jpg"
                                     alt="home15"
                                   />
                                 </span>
-                                <span class="text"> Startup </span>
+                                <span className="text"> Startup </span>
                               </a>
                             </li>
-                            <li class="nav-item">
-                              <a href="home-saas.html" class="item">
-                                <span class="img">
+                            <li className="nav-item">
+                              <a href="home-saas.html" className="item">
+                                <span className="img">
                                   <img
                                     src="../img/mega-menu-img/home17.jpg"
                                     alt="Classic Saas"
                                   />
                                 </span>
-                                <span class="text"> Classic Saas </span>
+                                <span className="text"> Classic Saas </span>
                               </a>
                             </li>
-                            <li class="nav-item">
-                              <a href="home-software-dark.html" class="item">
-                                <span class="img">
+                            <li className="nav-item">
+                              <a
+                                href="home-software-dark.html"
+                                className="item"
+                              >
+                                <span className="img">
                                   <img
                                     src="../img/mega-menu-img/home13.jpg"
                                     alt="Software (Dark)"
                                   />
                                 </span>
-                                <span class="text"> Software (Dark) </span>
+                                <span className="text"> Software (Dark) </span>
                               </a>
                             </li>
-                            <li class="nav-item">
-                              <a href="home-app-showcase.html" class="item">
-                                <span class="img">
+                            <li className="nav-item">
+                              <a href="home-app-showcase.html" className="item">
+                                <span className="img">
                                   <img
                                     src="../img/mega-menu-img/home14.jpg"
                                     alt="App Showcase"
                                   />
                                 </span>
-                                <span class="text"> App Showcase </span>
+                                <span className="text"> App Showcase </span>
                               </a>
                             </li>
-                            <li class="nav-item">
+                            <li className="nav-item">
                               <a
                                 href="home-digital-marketing.html"
-                                class="item"
+                                className="item"
                               >
-                                <span class="img">
+                                <span className="img">
                                   <img
                                     src="../img/mega-menu-img/home11.jpg"
                                     alt="Digital Marketing"
                                   />
                                 </span>
-                                <span class="text"> Digital Marketing </span>
+                                <span className="text">
+                                  {" "}
+                                  Digital Marketing{" "}
+                                </span>
                               </a>
                             </li>
-                            <li class="nav-item">
-                              <a href="home-cloud.html" class="item">
-                                <span class="img">
+                            <li className="nav-item">
+                              <a href="home-cloud.html" className="item">
+                                <span className="img">
                                   <img
                                     src="../img/mega-menu-img/home12.jpg"
                                     alt="Cloud Based Saas"
                                   />
                                 </span>
-                                <span class="text"> Cloud Based Saas </span>
+                                <span className="text"> Cloud Based Saas </span>
                               </a>
                             </li>
-                            <li class="nav-item">
-                              <a href="home-hr-management.html" class="item">
-                                <span class="img">
+                            <li className="nav-item">
+                              <a
+                                href="home-hr-management.html"
+                                className="item"
+                              >
+                                <span className="img">
                                   <img
                                     src="../img/mega-menu-img/home4.jpg"
                                     alt="HR Management"
                                   />
                                 </span>
-                                <span class="text"> HR Management </span>
+                                <span className="text"> HR Management </span>
                               </a>
                             </li>
-                            <li class="nav-item">
-                              <a href="home-marketing-two.html" class="item">
-                                <span class="img">
+                            <li className="nav-item">
+                              <a
+                                href="home-marketing-two.html"
+                                className="item"
+                              >
+                                <span className="img">
                                   <img
                                     src="../img/mega-menu-img/home3.jpg"
                                     alt="CRM Software"
                                   />
                                 </span>
-                                <span class="text"> CRM Software </span>
+                                <span className="text"> CRM Software </span>
                               </a>
                             </li>
-                            <li class="nav-item">
-                              <a href="home-payment-style2.html" class="item">
-                                <span class="img">
+                            <li className="nav-item">
+                              <a
+                                href="home-payment-style2.html"
+                                className="item"
+                              >
+                                <span className="img">
                                   <img
                                     src="../img/mega-menu-img/home1.jpg"
                                     alt="Accounts &amp; Billing"
                                   />
                                 </span>
-                                <span class="text">
+                                <span className="text">
                                   {" "}
                                   Accounts &amp; Billing{" "}
                                 </span>
                               </a>
                             </li>
-                            <li class="nav-item">
+                            <li className="nav-item">
                               <a
                                 href="home-digital-marketing-two.html"
-                                class="item"
+                                className="item"
                               >
-                                <span class="img">
+                                <span className="img">
                                   <img
                                     src="../img/mega-menu-img/home5.jpg"
                                     alt="Digital Agency"
                                   />
                                 </span>
-                                <span class="text"> Digital Agency </span>
+                                <span className="text"> Digital Agency </span>
                               </a>
                             </li>
-                            <li class="nav-item">
+                            <li className="nav-item">
                               <a
                                 href="home-project-management.html"
-                                class="item"
+                                className="item"
                               >
-                                <span class="img">
+                                <span className="img">
                                   <img
                                     src="../img/mega-menu-img/home8.jpg"
                                     alt="Project Management"
                                   />
                                 </span>
-                                <span class="text"> Project Management </span>
+                                <span className="text">
+                                  {" "}
+                                  Project Management{" "}
+                                </span>
                               </a>
                             </li>
-                            <li class="nav-item">
-                              <a href="home-saas-two.html" class="item">
-                                <span class="img">
+                            <li className="nav-item">
+                              <a href="home-saas-two.html" className="item">
+                                <span className="img">
                                   <img
                                     src="../img/mega-menu-img/saas2-slider.png"
                                     alt="Saas 02 (Slider)"
                                   />
                                 </span>
-                                <span class="text"> Saas 02 (Slider) </span>
+                                <span className="text"> Saas 02 (Slider) </span>
                               </a>
                             </li>
-                            <li class="nav-item">
-                              <a href="home-company.html" class="item">
-                                <span class="img">
+                            <li className="nav-item">
+                              <a href="home-company.html" className="item">
+                                <span className="img">
                                   <img
                                     src="../img/mega-menu-img/home2.jpg"
                                     alt="home2"
                                   />
                                 </span>
-                                <span class="text"> Company </span>
+                                <span className="text"> Company </span>
                               </a>
                             </li>
                           </ul>
@@ -398,63 +458,63 @@ function Navbar(props) {
                       </ul>
                     </div>
                   </li>
-                  <li class="dropdown submenu nav-item active">
+                  <li className="dropdown submenu nav-item active">
                     <a
                       title="Pages"
-                      class="dropdown-toggle nav-link"
+                      className="dropdown-toggle nav-link"
                       data-toggle="dropdown"
                       role="button"
                       aria-haspopup="true"
                       aria-expanded="false"
                       href="#"
                     >
-                      Pages
+                      <span className="nav-bar-link-prop">Solutions</span>
                     </a>
-                    <ul role="menu" class="dropdown-menu">
-                      <li class="dropdown submenu nav-item">
+                    <ul role="menu" className="dropdown-menu">
+                      <li className="dropdown submenu nav-item">
                         <a
                           title="Service"
-                          class="dropdown-toggle nav-link"
+                          className="dropdown-toggle nav-link"
                           data-toggle="dropdown"
                           role="button"
                           aria-haspopup="true"
                           aria-expanded="false"
                           href="#"
                         >
-                          Service <span class="arrow_carrot-right"></span>
+                          Service <span className="arrow_carrot-right"></span>
                         </a>
-                        <ul class="dropdown-menu">
-                          <li class="nav-item">
+                        <ul className="dropdown-menu">
+                          <li className="nav-item">
                             <a
                               title="Service 01"
-                              class="nav-link"
+                              className="nav-link"
                               href="service-1.html"
                             >
                               Service 01
                             </a>
                           </li>
-                          <li class="nav-item">
+                          <li className="nav-item">
                             <a
                               title="Service 02"
-                              class="nav-link"
+                              className="nav-link"
                               href="service-2.html"
                             >
                               Service 02
                             </a>
                           </li>
-                          <li class="nav-item">
+                          <li className="nav-item">
                             <a
                               title="Service 03"
-                              class="nav-link"
+                              className="nav-link"
                               href="service-3.html"
                             >
                               Service 03
                             </a>
                           </li>
-                          <li class="nav-item">
+                          <li className="nav-item">
                             <a
                               title="Service Details"
-                              class="nav-link"
+                              className="nav-link"
                               href="service-details.html"
                             >
                               Service Details
@@ -463,41 +523,41 @@ function Navbar(props) {
                         </ul>
                       </li>
 
-                      <li class="dropdown submenu nav-item">
+                      <li className="dropdown submenu nav-item">
                         <a
                           title="Career"
-                          class="dropdown-toggle nav-link"
+                          className="dropdown-toggle nav-link"
                           data-toggle="dropdown"
                           role="button"
                           aria-haspopup="true"
                           aria-expanded="false"
                           href="#"
                         >
-                          Career <span class="arrow_carrot-right"></span>
+                          Career <span className="arrow_carrot-right"></span>
                         </a>
-                        <ul class="dropdown-menu">
-                          <li class="nav-item">
+                        <ul className="dropdown-menu">
+                          <li className="nav-item">
                             <a
                               title="Job Listing"
-                              class="nav-link"
+                              className="nav-link"
                               href="job-listing.html"
                             >
                               Job Listing
                             </a>
                           </li>
-                          <li class="nav-item">
+                          <li className="nav-item">
                             <a
                               title="Job Details"
-                              class="nav-link"
+                              className="nav-link"
                               href="job-details.html"
                             >
                               Job Details
                             </a>
                           </li>
-                          <li class="nav-item">
+                          <li className="nav-item">
                             <a
                               title="Apply Job"
-                              class="nav-link"
+                              className="nav-link"
                               href="job-apply.html"
                             >
                               Apply Job
@@ -506,50 +566,58 @@ function Navbar(props) {
                         </ul>
                       </li>
 
-                      <li class="nav-item active">
-                        <a title="About" class="nav-link" href="about.html">
+                      <li className="nav-item active">
+                        <a title="About" className="nav-link" href="about.html">
                           About
                         </a>
                       </li>
 
-                      <li class="nav-item">
-                        <a title="Process" class="nav-link" href="process.html">
+                      <li className="nav-item">
+                        <a
+                          title="Process"
+                          className="nav-link"
+                          href="process.html"
+                        >
                           Process
                         </a>
                       </li>
 
-                      <li class="nav-item">
-                        <a title="Pricing" class="nav-link" href="price.html">
+                      <li className="nav-item">
+                        <a
+                          title="Pricing"
+                          className="nav-link"
+                          href="price.html"
+                        >
                           Pricing
                         </a>
                       </li>
 
-                      <li class="dropdown submenu nav-item">
+                      <li className="dropdown submenu nav-item">
                         <a
                           title="Case Study"
-                          class="dropdown-toggle nav-link"
+                          className="dropdown-toggle nav-link"
                           data-toggle="dropdown"
                           role="button"
                           aria-haspopup="true"
                           aria-expanded="false"
                           href="#"
                         >
-                          Case Study<span class="arrow_carrot-right"></span>
+                          Case Study<span className="arrow_carrot-right"></span>
                         </a>
-                        <ul class="dropdown-menu">
-                          <li class="nav-item">
+                        <ul className="dropdown-menu">
+                          <li className="nav-item">
                             <a
                               title="Case Study"
-                              class="nav-link"
+                              className="nav-link"
                               href="case-study.html"
                             >
                               Case Study
                             </a>
                           </li>
-                          <li class="nav-item">
+                          <li className="nav-item">
                             <a
                               title="Case study Details"
-                              class="nav-link"
+                              className="nav-link"
                               href="case-study-details.html"
                             >
                               Case Study Details
@@ -558,38 +626,38 @@ function Navbar(props) {
                         </ul>
                       </li>
 
-                      <li class="nav-item">
-                        <a title="Team" class="nav-link" href="team.html">
+                      <li className="nav-item">
+                        <a title="Team" className="nav-link" href="team.html">
                           Team
                         </a>
                       </li>
 
-                      <li class="dropdown submenu nav-item">
+                      <li className="dropdown submenu nav-item">
                         <a
                           title="Sign Up"
-                          class="dropdown-toggle nav-link"
+                          className="dropdown-toggle nav-link"
                           data-toggle="dropdown"
                           role="button"
                           aria-haspopup="true"
                           aria-expanded="false"
                           href="#"
                         >
-                          Sign Up <span class="arrow_carrot-right"></span>
+                          Sign Up <span className="arrow_carrot-right"></span>
                         </a>
-                        <ul class="dropdown-menu">
-                          <li class="nav-item">
+                        <ul className="dropdown-menu">
+                          <li className="nav-item">
                             <a
                               title="Sign Up 01"
-                              class="nav-link"
+                              className="nav-link"
                               href="sign-up-1.html"
                             >
                               Sign Up 01
                             </a>
                           </li>
-                          <li class="nav-item">
+                          <li className="nav-item">
                             <a
                               title="Sign Up 02"
-                              class="nav-link"
+                              className="nav-link"
                               href="sign-up-2.html"
                             >
                               Sign Up 02
@@ -598,32 +666,32 @@ function Navbar(props) {
                         </ul>
                       </li>
 
-                      <li class="dropdown submenu nav-item">
+                      <li className="dropdown submenu nav-item">
                         <a
                           title="Login"
-                          class="dropdown-toggle nav-link"
+                          className="dropdown-toggle nav-link"
                           data-toggle="dropdown"
                           role="button"
                           aria-haspopup="true"
                           aria-expanded="false"
                           href="#"
                         >
-                          Login<span class="arrow_carrot-right"></span>
+                          Login<span className="arrow_carrot-right"></span>
                         </a>
-                        <ul class="dropdown-menu">
-                          <li class="nav-item">
+                        <ul className="dropdown-menu">
+                          <li className="nav-item">
                             <a
                               title="Login 01"
-                              class="nav-link"
+                              className="nav-link"
                               href="login.html"
                             >
                               Login 01
                             </a>
                           </li>
-                          <li class="nav-item">
+                          <li className="nav-item">
                             <a
                               title="Login 02"
-                              class="nav-link"
+                              className="nav-link"
                               href="login-two.html"
                             >
                               Login 02
@@ -631,38 +699,38 @@ function Navbar(props) {
                           </li>
                         </ul>
                       </li>
-                      <li class="nav-item">
-                        <a title="FAQ" class="nav-link" href="faq.html">
+                      <li className="nav-item">
+                        <a title="FAQ" className="nav-link" href="faq.html">
                           FAQ
                         </a>
                       </li>
 
-                      <li class="dropdown submenu nav-item">
+                      <li className="dropdown submenu nav-item">
                         <a
                           title="Contact"
-                          class="dropdown-toggle nav-link"
+                          className="dropdown-toggle nav-link"
                           data-toggle="dropdown"
                           role="button"
                           aria-haspopup="true"
                           aria-expanded="false"
                           href="#"
                         >
-                          Contact <span class="arrow_carrot-right"></span>
+                          Contact <span className="arrow_carrot-right"></span>
                         </a>
-                        <ul role="menu" class="dropdown-menu">
-                          <li class="nav-item">
+                        <ul role="menu" className="dropdown-menu">
+                          <li className="nav-item">
                             <a
                               title="Contact 01"
-                              class="nav-link"
+                              className="nav-link"
                               href="contact-1.html"
                             >
                               Contact 01
                             </a>
                           </li>
-                          <li class="nav-item">
+                          <li className="nav-item">
                             <a
                               title="Contact  02"
-                              class="nav-link"
+                              className="nav-link"
                               href="contact-2.html"
                             >
                               Contact 02
@@ -671,47 +739,51 @@ function Navbar(props) {
                         </ul>
                       </li>
 
-                      <li class="nav-item">
+                      <li className="nav-item">
                         <a
                           title="Thank You"
-                          class="nav-link"
+                          className="nav-link"
                           href="thanks.html"
                         >
                           Thank You
                         </a>
                       </li>
-                      <li class="nav-item">
+                      <li className="nav-item">
                         <a
                           title="Coming Soon"
-                          class="nav-link"
+                          className="nav-link"
                           href="coming-soon.html"
                         >
                           Coming Soon
                         </a>
                       </li>
 
-                      <li class="dropdown submenu nav-item">
+                      <li className="dropdown submenu nav-item">
                         <a
                           title="404"
-                          class="dropdown-toggle nav-link"
+                          className="dropdown-toggle nav-link"
                           data-toggle="dropdown"
                           role="button"
                           aria-haspopup="true"
                           aria-expanded="false"
                           href="#"
                         >
-                          404<span class="arrow_carrot-right"></span>
+                          404<span className="arrow_carrot-right"></span>
                         </a>
-                        <ul class="dropdown-menu">
-                          <li class="nav-item">
-                            <a title="404 01" class="nav-link" href="404.html">
+                        <ul className="dropdown-menu">
+                          <li className="nav-item">
+                            <a
+                              title="404 01"
+                              className="nav-link"
+                              href="404.html"
+                            >
                               404 01
                             </a>
                           </li>
-                          <li class="nav-item">
+                          <li className="nav-item">
                             <a
                               title="404 02"
-                              class="nav-link"
+                              className="nav-link"
                               href="404-two.html"
                             >
                               404 02
@@ -721,185 +793,185 @@ function Navbar(props) {
                       </li>
                     </ul>
                   </li>
-                  <li class="nav-item dropdown submenu mega_menu">
+                  <li className="nav-item dropdown submenu mega_menu">
                     <a
-                      class="nav-link dropdown-toggle"
+                      className="nav-link dropdown-toggle"
                       href="#"
                       role="button"
                       data-toggle="dropdown"
                       aria-haspopup="true"
                       aria-expanded="false"
                     >
-                      Portfolio
+                      <span className="nav-bar-link-prop"> Industries</span>
                     </a>
-                    <div class="mega_menu_inner">
-                      <ul class="dropdown-menu">
-                        <li class="nav-item">
-                          <a href="index.html" class="nav-link">
+                    <div className="mega_menu_inner">
+                      <ul className="dropdown-menu">
+                        <li className="nav-item">
+                          <a href="index.html" className="nav-link">
                             Portfolio Grid
                           </a>
-                          <ul class="dropdown-menu">
-                            <li class="nav-item">
+                          <ul className="dropdown-menu">
+                            <li className="nav-item">
                               <a
                                 href="portfolio-grid-2col.html"
-                                class="nav-link"
+                                className="nav-link"
                               >
                                 Style 1 (2 columns)
                               </a>
                             </li>
-                            <li class="nav-item">
+                            <li className="nav-item">
                               <a
                                 href="portfolio-grid-3columns.html"
-                                class="nav-link"
+                                className="nav-link"
                               >
                                 Style 1 (3 columns)
                               </a>
                             </li>
-                            <li class="nav-item">
+                            <li className="nav-item">
                               <a
                                 href="portfolio-grid-4columns.html"
-                                class="nav-link"
+                                className="nav-link"
                               >
                                 Style 1 (4 columns)
                               </a>
                             </li>
-                            <li class="nav-item">
+                            <li className="nav-item">
                               <a
                                 href="portfolio-grid-2col-2.html"
-                                class="nav-link"
+                                className="nav-link"
                               >
                                 Style 2 (2 columns)
                               </a>
                             </li>
-                            <li class="nav-item">
+                            <li className="nav-item">
                               <a
                                 href="portfolio-grid-2col-3.html"
-                                class="nav-link"
+                                className="nav-link"
                               >
                                 Style 2 (3 columns)
                               </a>
                             </li>
-                            <li class="nav-item">
+                            <li className="nav-item">
                               <a
                                 href="portfolio-grid-2col-4.html"
-                                class="nav-link"
+                                className="nav-link"
                               >
                                 Style 2 (4 columns)
                               </a>
                             </li>
                           </ul>
                         </li>
-                        <li class="nav-item">
-                          <a href="index.html" class="nav-link">
+                        <li className="nav-item">
+                          <a href="index.html" className="nav-link">
                             Portfolio Fluid
                           </a>
-                          <ul class="dropdown-menu">
-                            <li class="nav-item">
+                          <ul className="dropdown-menu">
+                            <li className="nav-item">
                               <a
                                 href="portfolio-fullwidth-3columns.html"
-                                class="nav-link"
+                                className="nav-link"
                               >
                                 Style 1 (3 columns)
                               </a>
                             </li>
-                            <li class="nav-item">
+                            <li className="nav-item">
                               <a
                                 href="portfolio-fullwidth-4columns.html"
-                                class="nav-link"
+                                className="nav-link"
                               >
                                 Style 1 (4 columns)
                               </a>
                             </li>
-                            <li class="nav-item">
+                            <li className="nav-item">
                               <a
                                 href="portfolio-grid-fullwidth1.html"
-                                class="nav-link"
+                                className="nav-link"
                               >
                                 Style 2 (3 columns)
                               </a>
                             </li>
-                            <li class="nav-item">
+                            <li className="nav-item">
                               <a
                                 href="portfolio-grid-fullwidth2.html"
-                                class="nav-link"
+                                className="nav-link"
                               >
                                 Style 2 (4 columns)
                               </a>
                             </li>
                           </ul>
                         </li>
-                        <li class="nav-item">
-                          <a href="index.html" class="nav-link">
+                        <li className="nav-item">
+                          <a href="index.html" className="nav-link">
                             Portfolio Masonry
                           </a>
-                          <ul class="dropdown-menu">
-                            <li class="nav-item">
+                          <ul className="dropdown-menu">
+                            <li className="nav-item">
                               <a
                                 href="portfolio-mas-2col.html"
-                                class="nav-link"
+                                className="nav-link"
                               >
                                 Style 1 (2 columns)
                               </a>
                             </li>
-                            <li class="nav-item">
+                            <li className="nav-item">
                               <a
                                 href="portfolio-mas-3col.html"
-                                class="nav-link"
+                                className="nav-link"
                               >
                                 Style 1 (3 columns)
                               </a>
                             </li>
-                            <li class="nav-item">
+                            <li className="nav-item">
                               <a
                                 href="portfolio-mas-4col.html"
-                                class="nav-link"
+                                className="nav-link"
                               >
                                 Style 1 (4 columns)
                               </a>
                             </li>
-                            <li class="nav-item">
+                            <li className="nav-item">
                               <a
                                 href="portfolio-mas-3col-2.html"
-                                class="nav-link"
+                                className="nav-link"
                               >
                                 Style 2 (3 columns)
                               </a>
                             </li>
-                            <li class="nav-item">
+                            <li className="nav-item">
                               <a
                                 href="portfolio-mas-4col-2.html"
-                                class="nav-link"
+                                className="nav-link"
                               >
                                 Style 2 (4 columns)
                               </a>
                             </li>
                           </ul>
                         </li>
-                        <li class="nav-item">
-                          <a href="index.html" class="nav-link">
+                        <li className="nav-item">
+                          <a href="index.html" className="nav-link">
                             Project details
                           </a>
-                          <ul class="dropdown-menu">
-                            <li class="nav-item">
+                          <ul className="dropdown-menu">
+                            <li className="nav-item">
                               <a
                                 href="portfolio-details-1.html"
-                                class="nav-link"
+                                className="nav-link"
                               >
                                 Style 1
                               </a>
                             </li>
-                            <li class="nav-item">
+                            <li className="nav-item">
                               <a
                                 href="portfolio-details-2.html"
-                                class="nav-link"
+                                className="nav-link"
                               >
                                 Style 2
                               </a>
                             </li>
-                            <li class="nav-item">
+                            <li className="nav-item">
                               <a
                                 href="portfolio-details-3.html"
-                                class="nav-link"
+                                className="nav-link"
                               >
                                 Style 3
                               </a>
@@ -909,306 +981,510 @@ function Navbar(props) {
                       </ul>
                     </div>
                   </li>
-                  <li class="nav-item dropdown submenu">
+                  <li className="nav-item dropdown submenu">
                     <a
-                      class="nav-link dropdown-toggle"
+                      className="nav-link dropdown-toggle"
                       href="#"
                       role="button"
                       data-toggle="dropdown"
                       aria-haspopup="true"
                       aria-expanded="false"
                     >
-                      Shop
+                      <span className="nav-bar-link-prop">Resources</span>
                     </a>
-                    <ul class="dropdown-menu">
-                      <li class="nav-item">
-                        <a href="shop-grid.html" class="nav-link">
+                    <ul className="dropdown-menu">
+                      <li className="nav-item">
+                        <a href="shop-grid.html" className="nav-link">
                           Shop Grid
                         </a>
                       </li>
-                      <li class="nav-item">
-                        <a href="shop-grid-left-sidebar.html" class="nav-link">
+                      <li className="nav-item">
+                        <a
+                          href="shop-grid-left-sidebar.html"
+                          className="nav-link"
+                        >
                           Shop Grid Sidebar
                         </a>
                       </li>
-                      <li class="nav-item">
-                        <a href="shop-list.html" class="nav-link">
+                      <li className="nav-item">
+                        <a href="shop-list.html" className="nav-link">
                           Shop list
                         </a>
                       </li>
-                      <li class="nav-item">
-                        <a href="product-details-1.html" class="nav-link">
+                      <li className="nav-item">
+                        <a href="product-details-1.html" className="nav-link">
                           Product detail
                         </a>
                       </li>
-                      <li class="nav-item">
-                        <a href="shoping-cart.html" class="nav-link">
+                      <li className="nav-item">
+                        <a href="shoping-cart.html" className="nav-link">
                           Shopping cart
                         </a>
                       </li>
-                      <li class="nav-item">
-                        <a href="checkout.html" class="nav-link">
+                      <li className="nav-item">
+                        <a href="checkout.html" className="nav-link">
                           Checkout
                         </a>
                       </li>
-                      <li class="nav-item">
-                        <a href="wishlist.html" class="nav-link">
+                      <li className="nav-item">
+                        <a href="wishlist.html" className="nav-link">
                           Wishlist
                         </a>
                       </li>
                     </ul>
                   </li>
-                  <li class="nav-item dropdown submenu">
+                  <li className="nav-item dropdown submenu">
                     <a
-                      class="nav-link dropdown-toggle"
+                      className="nav-link dropdown-toggle"
                       href="#"
                       role="button"
                       data-toggle="dropdown"
                       aria-haspopup="true"
                       aria-expanded="false"
                     >
-                      Blog
+                      <span className="nav-bar-link-prop">Pricing</span>
                     </a>
-                    <ul class="dropdown-menu">
-                      <li class="nav-item">
-                        <a href="blog-grid.html" class="nav-link">
+                    <ul className="dropdown-menu">
+                      <li className="nav-item">
+                        <a href="blog-grid.html" className="nav-link">
                           Blog Grid
                         </a>
                       </li>
-                      <li class="nav-item">
-                        <a href="blog-grid-two.html" class="nav-link">
+                      <li className="nav-item">
+                        <a href="blog-grid-two.html" className="nav-link">
                           Blog Grid Two
                         </a>
                       </li>
-                      <li class="nav-item">
-                        <a href="blog-list.html" class="nav-link">
+                      <li className="nav-item">
+                        <a href="blog-list.html" className="nav-link">
                           Blog List
                         </a>
                       </li>
-                      <li class="nav-item">
-                        <a href="blog-right-sidebar.html" class="nav-link">
+                      <li className="nav-item">
+                        <a href="blog-right-sidebar.html" className="nav-link">
                           Blog Right Sidebar
                         </a>
                       </li>
-                      <li class="nav-item">
-                        <a href="blog-masonry.html" class="nav-link">
+                      <li className="nav-item">
+                        <a href="blog-masonry.html" className="nav-link">
                           Blog Masonry
                         </a>
                       </li>
-                      <li class="nav-item">
-                        <a href="blog-masonry-two.html" class="nav-link">
+                      <li className="nav-item">
+                        <a href="blog-masonry-two.html" className="nav-link">
                           Blog Masonry Two
                         </a>
                       </li>
-                      <li class="nav-item">
-                        <a href="blog-masonry-sidebar.html" class="nav-link">
+                      <li className="nav-item">
+                        <a
+                          href="blog-masonry-sidebar.html"
+                          className="nav-link"
+                        >
                           Blog Masonry Sidebar
                         </a>
                       </li>
-                      <li class="nav-item">
+                      <li className="nav-item">
                         <a
                           href="blog-masonry-sidebar-two.html"
-                          class="nav-link"
+                          className="nav-link"
                         >
                           Blog Masonry Sidebar Two
                         </a>
                       </li>
-                      <li class="nav-item">
-                        <a href="blog-single.html" class="nav-link">
+                      <li className="nav-item">
+                        <a href="blog-single.html" className="nav-link">
                           Blog Single
                         </a>
                       </li>
-                      <li class="nav-item">
-                        <a href="blog-single-two.html" class="nav-link">
+                      <li className="nav-item">
+                        <a href="blog-single-two.html" className="nav-link">
                           Blog Single Two
                         </a>
                       </li>
                     </ul>
                   </li>
-                  <li class="nav-item dropdown submenu mega_menu">
+                  <li className="nav-item dropdown submenu mega_menu">
                     <a
-                      class="nav-link dropdown-toggle"
+                      className="nav-link dropdown-toggle"
                       href="#"
                       role="button"
                       data-toggle="dropdown"
                       aria-haspopup="true"
                       aria-expanded="false"
                     >
-                      Elements
+                      <span className="nav-bar-link-prop">Company</span>
                     </a>
-                    <div class="mega_menu_inner">
-                      <ul class="dropdown-menu">
-                        <li class="nav-item">
-                          <a class="nav-link">Elements 01</a>
-                          <ul class="dropdown-menu">
-                            <li class="nav-item">
-                              <a href="Accordion.html" class="nav-link">
+                    <div className="mega_menu_inner">
+                      <ul className="dropdown-menu">
+                        <li className="nav-item">
+                          <a className="nav-link">Elements 01</a>
+                          <ul className="dropdown-menu">
+                            <li className="nav-item">
+                              <a href="Accordion.html" className="nav-link">
                                 Accordions
                               </a>
                             </li>
-                            <li class="nav-item">
-                              <a href="button.html" class="nav-link">
+                            <li className="nav-item">
+                              <a href="button.html" className="nav-link">
                                 Buttons
                               </a>
                             </li>
-                            <li class="nav-item">
-                              <a href="team.html" class="nav-link">
+                            <li className="nav-item">
+                              <a href="team.html" className="nav-link">
                                 Team
                               </a>
                             </li>
-                            <li class="nav-item">
-                              <a href="integration.html" class="nav-link">
+                            <li className="nav-item">
+                              <a href="integration.html" className="nav-link">
                                 Integration
                               </a>
                             </li>
-                            <li class="nav-item">
-                              <a href="client.html" class="nav-link">
+                            <li className="nav-item">
+                              <a href="client.html" className="nav-link">
                                 Clients
                               </a>
                             </li>
-                            <li class="nav-item">
-                              <a href="subscribe.html" class="nav-link">
+                            <li className="nav-item">
+                              <a href="subscribe.html" className="nav-link">
                                 Subscribe
                               </a>
                             </li>
-                            <li class="nav-item">
-                              <a href="call-to-action.html" class="nav-link">
+                            <li className="nav-item">
+                              <a
+                                href="call-to-action.html"
+                                className="nav-link"
+                              >
                                 Call to Action
                               </a>
                             </li>
-                            <li class="nav-item">
-                              <a href="tab.html" class="nav-link">
+                            <li className="nav-item">
+                              <a href="tab.html" className="nav-link">
                                 Tab
                               </a>
                             </li>
                           </ul>
                         </li>
 
-                        <li class="nav-item">
-                          <a class="nav-link">Elements 02</a>
-                          <ul class="dropdown-menu">
-                            <li class="nav-item">
-                              <a href="testimonial.html" class="nav-link">
+                        <li className="nav-item">
+                          <a className="nav-link">Elements 02</a>
+                          <ul className="dropdown-menu">
+                            <li className="nav-item">
+                              <a href="testimonial.html" className="nav-link">
                                 Testimonials
                               </a>
                             </li>
-                            <li class="nav-item">
-                              <a href="video.html" class="nav-link">
+                            <li className="nav-item">
+                              <a href="video.html" className="nav-link">
                                 Video
                               </a>
                             </li>
-                            <li class="nav-item">
-                              <a href="carosuel.html" class="nav-link">
+                            <li className="nav-item">
+                              <a href="carosuel.html" className="nav-link">
                                 Carosuel
                               </a>
                             </li>
-                            <li class="nav-item">
-                              <a href="google-map.html" class="nav-link">
+                            <li className="nav-item">
+                              <a href="google-map.html" className="nav-link">
                                 Google Map
                               </a>
                             </li>
-                            <li class="nav-item">
-                              <a href="contact-form.html" class="nav-link">
+                            <li className="nav-item">
+                              <a href="contact-form.html" className="nav-link">
                                 Contact Form
                               </a>
                             </li>
-                            <li class="nav-item">
-                              <a href="process.html" class="nav-link">
+                            <li className="nav-item">
+                              <a href="process.html" className="nav-link">
                                 Process
                               </a>
                             </li>
-                            <li class="nav-item">
-                              <a href="getapp.html" class="nav-link">
+                            <li className="nav-item">
+                              <a href="getapp.html" className="nav-link">
                                 Get App
                               </a>
                             </li>
                           </ul>
                         </li>
-                        <li class="nav-item">
-                          <a class="nav-link">Elements 03</a>
-                          <ul class="dropdown-menu">
-                            <li class="nav-item">
-                              <a href="heading.html" class="nav-link">
+                        <li className="nav-item">
+                          <a className="nav-link">Elements 03</a>
+                          <ul className="dropdown-menu">
+                            <li className="nav-item">
+                              <a href="heading.html" className="nav-link">
                                 Heading
                               </a>
                             </li>
-                            <li class="nav-item">
-                              <a href="blockquote.html" class="nav-link">
+                            <li className="nav-item">
+                              <a href="blockquote.html" className="nav-link">
                                 Blockquote
                               </a>
                             </li>
-                            <li class="nav-item">
-                              <a href="price.html" class="nav-link">
+                            <li className="nav-item">
+                              <a href="price.html" className="nav-link">
                                 Pricing Table
                               </a>
                             </li>
-                            <li class="nav-item">
-                              <a href="fun-fact.html" class="nav-link">
+                            <li className="nav-item">
+                              <a href="fun-fact.html" className="nav-link">
                                 Fun Fact
                               </a>
                             </li>
-                            <li class="nav-item">
-                              <a href="coming-soon.html" class="nav-link">
+                            <li className="nav-item">
+                              <a href="coming-soon.html" className="nav-link">
                                 Countdown Timer
                               </a>
                             </li>
-                            <li class="nav-item">
-                              <a href="pagination.html" class="nav-link">
+                            <li className="nav-item">
+                              <a href="pagination.html" className="nav-link">
                                 Pagination
                               </a>
                             </li>
-                            <li class="nav-item">
-                              <a href="heading-style.html" class="nav-link">
+                            <li className="nav-item">
+                              <a href="heading-style.html" className="nav-link">
                                 Heading Elements
                               </a>
                             </li>
-                            <li class="nav-item">
-                              <a href="alart.html" class="nav-link">
+                            <li className="nav-item">
+                              <a href="alart.html" className="nav-link">
                                 Alart
                               </a>
                             </li>
                           </ul>
                         </li>
-                        <li class="nav-item">
-                          <a class="nav-link"> Headers </a>
-                          <ul class="dropdown-menu">
-                            <li class="nav-item">
-                              <a href="header-dark.html" class="nav-link">
+                        <li className="nav-item">
+                          <a className="nav-link"> Headers </a>
+                          <ul className="dropdown-menu">
+                            <li className="nav-item">
+                              <a href="header-dark.html" className="nav-link">
                                 Header Dark
                               </a>
                             </li>
-                            <li class="nav-item">
-                              <a href="header-style2.html" class="nav-link">
+                            <li className="nav-item">
+                              <a href="header-style2.html" className="nav-link">
                                 Header Style 2
                               </a>
                             </li>
-                            <li class="nav-item">
-                              <a href="header-style3.html" class="nav-link">
+                            <li className="nav-item">
+                              <a href="header-style3.html" className="nav-link">
                                 Header Style 3
                               </a>
                             </li>
-                            <li class="nav-item">
-                              <a href="header-style4.html" class="nav-link">
+                            <li className="nav-item">
+                              <a href="header-style4.html" className="nav-link">
                                 Header Style 4
                               </a>
                             </li>
-                            <li class="nav-item">
-                              <a href="header-style5.html" class="nav-link">
+                            <li className="nav-item">
+                              <a href="header-style5.html" className="nav-link">
                                 Header Style 5
                               </a>
                             </li>
-                            <li class="nav-item">
-                              <a href="header-style6.html" class="nav-link">
+                            <li className="nav-item">
+                              <a href="header-style6.html" className="nav-link">
                                 Header Style 6
                               </a>
                             </li>
-                            <li class="nav-item">
-                              <a href="header-style7.html" class="nav-link">
+                            <li className="nav-item">
+                              <a href="header-style7.html" className="nav-link">
                                 Header Style 7
                               </a>
                             </li>
-                            <li class="nav-item">
-                              <a href="header-style8.html" class="nav-link">
+                            <li className="nav-item">
+                              <a href="header-style8.html" className="nav-link">
+                                Header Style 8
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li className="nav-item dropdown submenu mega_menu">
+                    <a
+                      className="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      <span className="nav-bar-link-prop">Partner</span>
+                    </a>
+                    <div className="mega_menu_inner">
+                      <ul className="dropdown-menu">
+                        <li className="nav-item">
+                          <a className="nav-link">Elements 01</a>
+                          <ul className="dropdown-menu">
+                            <li className="nav-item">
+                              <a href="Accordion.html" className="nav-link">
+                                Accordions
+                              </a>
+                            </li>
+                            <li className="nav-item">
+                              <a href="button.html" className="nav-link">
+                                Buttons
+                              </a>
+                            </li>
+                            <li className="nav-item">
+                              <a href="team.html" className="nav-link">
+                                Team
+                              </a>
+                            </li>
+                            <li className="nav-item">
+                              <a href="integration.html" className="nav-link">
+                                Integration
+                              </a>
+                            </li>
+                            <li className="nav-item">
+                              <a href="client.html" className="nav-link">
+                                Clients
+                              </a>
+                            </li>
+                            <li className="nav-item">
+                              <a href="subscribe.html" className="nav-link">
+                                Subscribe
+                              </a>
+                            </li>
+                            <li className="nav-item">
+                              <a
+                                href="call-to-action.html"
+                                className="nav-link"
+                              >
+                                Call to Action
+                              </a>
+                            </li>
+                            <li className="nav-item">
+                              <a href="tab.html" className="nav-link">
+                                Tab
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+
+                        <li className="nav-item">
+                          <a className="nav-link">Elements 02</a>
+                          <ul className="dropdown-menu">
+                            <li className="nav-item">
+                              <a href="testimonial.html" className="nav-link">
+                                Testimonials
+                              </a>
+                            </li>
+                            <li className="nav-item">
+                              <a href="video.html" className="nav-link">
+                                Video
+                              </a>
+                            </li>
+                            <li className="nav-item">
+                              <a href="carosuel.html" className="nav-link">
+                                Carosuel
+                              </a>
+                            </li>
+                            <li className="nav-item">
+                              <a href="google-map.html" className="nav-link">
+                                Google Map
+                              </a>
+                            </li>
+                            <li className="nav-item">
+                              <a href="contact-form.html" className="nav-link">
+                                Contact Form
+                              </a>
+                            </li>
+                            <li className="nav-item">
+                              <a href="process.html" className="nav-link">
+                                Process
+                              </a>
+                            </li>
+                            <li className="nav-item">
+                              <a href="getapp.html" className="nav-link">
+                                Get App
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li className="nav-item">
+                          <a className="nav-link">Elements 03</a>
+                          <ul className="dropdown-menu">
+                            <li className="nav-item">
+                              <a href="heading.html" className="nav-link">
+                                Heading
+                              </a>
+                            </li>
+                            <li className="nav-item">
+                              <a href="blockquote.html" className="nav-link">
+                                Blockquote
+                              </a>
+                            </li>
+                            <li className="nav-item">
+                              <a href="price.html" className="nav-link">
+                                Pricing Table
+                              </a>
+                            </li>
+                            <li className="nav-item">
+                              <a href="fun-fact.html" className="nav-link">
+                                Fun Fact
+                              </a>
+                            </li>
+                            <li className="nav-item">
+                              <a href="coming-soon.html" className="nav-link">
+                                Countdown Timer
+                              </a>
+                            </li>
+                            <li className="nav-item">
+                              <a href="pagination.html" className="nav-link">
+                                Pagination
+                              </a>
+                            </li>
+                            <li className="nav-item">
+                              <a href="heading-style.html" className="nav-link">
+                                Heading Elements
+                              </a>
+                            </li>
+                            <li className="nav-item">
+                              <a href="alart.html" className="nav-link">
+                                Alart
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li className="nav-item">
+                          <a className="nav-link"> Headers </a>
+                          <ul className="dropdown-menu">
+                            <li className="nav-item">
+                              <a href="header-dark.html" className="nav-link">
+                                Header Dark
+                              </a>
+                            </li>
+                            <li className="nav-item">
+                              <a href="header-style2.html" className="nav-link">
+                                Header Style 2
+                              </a>
+                            </li>
+                            <li className="nav-item">
+                              <a href="header-style3.html" className="nav-link">
+                                Header Style 3
+                              </a>
+                            </li>
+                            <li className="nav-item">
+                              <a href="header-style4.html" className="nav-link">
+                                Header Style 4
+                              </a>
+                            </li>
+                            <li className="nav-item">
+                              <a href="header-style5.html" className="nav-link">
+                                Header Style 5
+                              </a>
+                            </li>
+                            <li className="nav-item">
+                              <a href="header-style6.html" className="nav-link">
+                                Header Style 6
+                              </a>
+                            </li>
+                            <li className="nav-item">
+                              <a href="header-style7.html" className="nav-link">
+                                Header Style 7
+                              </a>
+                            </li>
+                            <li className="nav-item">
+                              <a href="header-style8.html" className="nav-link">
                                 Header Style 8
                               </a>
                             </li>
@@ -1219,28 +1495,28 @@ function Navbar(props) {
                   </li>
                 </ul>
                 <a
-                  class="btn_get btn_hover hidden-sm hidden-xs"
+                  className="btn_get btn_hover hidden-sm hidden-xs"
                   href="#get-app"
                 >
-                  Sign In
+                  START FREE TRIAL
                 </a>
               </div>
             </div>
           </nav>
         </header>
 
-        <section class="breadcrumb_area">
+        {/* <section className="breadcrumb_area">
           <img
-            class="breadcrumb_shap"
+            className="breadcrumb_shap"
             src="../img/breadcrumb/banner_bg.png"
             alt=""
           />
-          <div class="container">
-            <div class="breadcrumb_content text-center">
-              <h1 class="f_p f_700 f_size_50 w_color l_height50 mb_20">
+          <div className="container">
+            <div className="breadcrumb_content text-center">
+              <h1 className="f_p f_700 f_size_50 w_color l_height50 mb_20">
                 About us
               </h1>
-              <p class="f_400 w_color f_size_16 l_height26">
+              <p className="f_400 w_color f_size_16 l_height26">
                 Why I say old chap that is spiffing off his nut arse pear shaped
                 plastered
                 <br />
@@ -1248,7 +1524,7 @@ function Navbar(props) {
               </p>
             </div>
           </div>
-        </section>
+        </section> */}
       </div>
     </div>
   );
